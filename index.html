@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	
+	<title>Lightbox</title>
+</head>
+<body>
+
+	<button type="button" data-filter="all">All</button>
+	<button type="button" data-filter=".aadl">Ann Arbor District Library Archives</button>
+	<button type="button" data-filter=".ford">Gerald Ford Library</button>
+	<button type="button" data-filter=".school">Academics</button>
+	<button type="button" data-filter="none">Hide all</button>
+
+	<div class = "gallery">
+		<div class="mix aadl" data-order="1">
+		<a href="images/aadl_clipping_files.jpg" data-lightbox="image-aadl" data-title="AADL clipping files"><img src="images/aadl_clipping_files.jpg" alt="AADL clipping files"></a>
+		</div>
+
+		<div class="mix aadl" data-order="2">
+		<a href="images/aadl_cold_room.jpg" data-lightbox="image-aadl" data-title="AADL Cold Room"><img src="images/aadl_cold_room.jpg" alt="AADL Cold Room"></a>
+		</div>
+		
+		<div class="mix ford" data-order="3">
+		<a href="images/grf_library_box.jpg" data-lightbox="image-grf" data-title="Ford Library Box"><img src="images/grf_library_box.jpg" alt = "Ford Library Box" ></a>
+	</div>
+		
+		<div class="mix school" data-order="4">
+		<a href="images/um_hatcher_library2.jpg" data-lightbox="image-school" data-title="Hatcher Library"><img src="images/um_hatcher_library2.jpg" alt = "Hatcher Library"></a>
+	</div>
+		
+		<div class="mix school" data-order="5">
+		<a href="images/um_north_quad.jpg" data-lightbox="image-school" data-title="North Quad"><img src="images/um_north_quad.jpg" alt = "North Quad"></a>
+		</div>
+
+		<div class="mix aadl" data-order="6">
+		<a href="images/aadl_negative.jpg" data-lightbox="image-aadl" data-title="AADL negative"><img src="images/aadl_negative.jpg" alt="AADL negative"></a>
+	</div>
+		
+		<div class="mix ford" data-order="7">
+		<a href="images/grf_library_box_label.jpg" data-lightbox="image-grf" data-title="Ford Library Box Label"><img src="images/grf_library_box_label.jpg" alt = "Ford Library Box Label"></a>
+	</div>
+		
+		<div class="mix school" data-order="8">
+		<a href="images/si_676.jpg" data-lightbox="image-school" data-title="Leo Sarkisian"><img src="images/si_676.jpg" alt = "Leo Sarkisian 45s"></a>
+	</div>
+
+		<div class="mix school" data-order="9">
+		<a href="images/olivia_oudsema_portrait.jpg" data-lightbox="image-9" data-title="Oliva Oudsema"><img src="images/olivia_oudsema_portrait.jpg" alt = "Oliva Oudsema" class="mix school" data-order="9"></a>
+	</div>
+
+	</div>
+
+<script src="patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+<script src="lightbox2-master/dist/js/lightbox.js"></script>
+<script>
+    var containerEl = document.querySelector('.gallery');
+    var mixer = mixitup(containerEl);
+</script>
+</body>
+</html>
